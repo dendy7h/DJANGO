@@ -2,3 +2,4 @@
 design/*
 *.sw*
 *.pyc
+*.net_system
