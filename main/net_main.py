@@ -304,11 +304,11 @@ def main():
     django.setup()
 
     DEBUG = True
-    LOOP_DELAY = 30
-    MAX_ROUNDS = 5
+    loop_delay = 30
+    max_rounds = 5
     counter = 0
 
-    while True and counter < MAX_ROUNDS:
+    while True and counter < max_rounds:
         if DEBUG:
             print('detect config change on devices')
 
@@ -317,8 +317,8 @@ def main():
         counter += 1
 
         if DEBUG:
-            print('Sleeping for {} seconds'.format(LOOP_DELAY))
-        time.sleep(LOOP_DELAY)
+            print('Sleeping for {} seconds'.format(loop_delay))
+        time.sleep(loop_delay)
 
 
 if __name__ == '__main__':
